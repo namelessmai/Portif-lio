@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/reset.css">
+    <link rel="stylesheet" href="estilos/carrosel.css">
+    <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> 
+    <link rel="stylesheet" href="https://unpkg.com/@popperjs/core@2.11.6/dist/umd/popper.min.js">
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6.3.2/dist/tippy.css">
+    <title>Meu Portifólio</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="cabecalho___titulo">Horplami</h1> 
+        <div class="cabecalho__navegacao">  
+            <nav class="cabecalho__categorias">
+                <a href="#projetos">Projetos</a>
+                <a href="#formacoes">Formações</a>
+                <a href="#tecnologias">Tecnologias</a>
+                <a href="#curriculo">Currículo</a>
+            </nav>
+        </div>
+        
+        <div class="cabecalho__container">
+            <h1 class="cabecalho__container__titulo">Web <br> Portifólio</h1>
+            <p class="cabecalho__container__paragrafo">O trecho padrão original de Lorem Ipsum, usado desde o século XVI, está reproduzido abaixo para os interessados. Seções 1.10.32 e 1.10.33 de "de Finibus Bonorum et Malorum" de Cicero também foram reproduzidas abaixo em sua forma exata original, acompanhada das versões para o inglês da tradução feita por H. Rackham em 1914.</p>
+            <div class="cabecalho__container__redes">
+                <a href="#"><img src="assets/linkedin 1.svg" alt=""></a>
+                <a href="#"><img src="assets/github 1.svg" alt=""></a>
+                <a href="#"><img src="assets/email 1.svg" alt=""></a>               
+            </div>
+            <a class="cabecalho__container__btn" href="#">Email</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="projetos">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="assets\projetos\alura-geek.png" width="300" height="300" alt="Descrição da imagem">
+                    </a>
+                    <h2>Alura Geek</h2>
+                    <p>Site E-commerce com painel para adição e exclusão de produtos</p>
+                </div>                                            
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="assets\projetos\alura-plus.png" width="300px" height="300px" alt="Descrição da imagem">
+                    </a>
+                    <h2>Alura Plus</h2>
+                    <p>de um texto legível. Muitos softwares de publicação e editores de pá</p>
+                </div>     
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="assets\projetos\alura-books.png" width="300px" height="300px" alt="Descrição da imagem">
+                    </a>
+                    <h2>Alura Books</h2>
+                    <p>de um texto legível. Muitos softwares de publicação e editores de pá</p>
+                </div>     
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="assets\projetos\Decodificador de Texto.png" width="300px" height="300px" alt="Descrição da imagem">
+                    </a>
+                    <h2>Decodificador de Texto</h2>
+                    <p>de um texto legível. Muitos softwares de publicação e editores de pá</p>
+                </div>     
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="assets\projetos\portifolio.png" width="300px" height="300px" alt="Descrição da imagem">
+                    </a>
+                    <h2>Portifólio</h2>
+                    <p>de um texto legível. Muitos softwares de publicação e editores de pá</p>
+                </div>          
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+            </div>
+        </section>
+        <section id="formacoes">
+            <h1>Formações e Certificados</h1>
+            <hr>
+            <p class="formacoes__paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Atque quos eos eum rerum veniam <br> optio nobis ratione officiis, ut et temporibus dolores maxime repudiandae ea totam corporis iste officia consequuntur.</p>
+            <div class="formacoes__container">
+                <div class="formacoes__container-cursos">
+                    <div class="formacoes__container-cursos-logo">
+                        <img src="assets/estacio-logo-0 1.svg" width="300px" alt="">
+                    </div>
+                        <h2>Estácio</h2>
+                        <p>Redes de Computadores | jan 2024 - jun 2026</p>
+                </div>
+                <div class="formacoes__container-cursos">
+                    <div class="formacoes__container-cursos-logo">
+                        <img src="assets/alura-logo 1.svg" width="200px" alt="">
+                    </div>
+                    <div class="formacoes__container-cursos-descricao">
+                          <div class="tooltip">
+                            <a href="#">Alura<img src="assets/Vector.svg" alt=""></a>
+                            <span class="tooltiptext">Clique para saber mais</span>
+                          </div>
+                        </div>
+                        <p>Formação Front End | Jan 2024 - Jul 2024</p>
+                </div>
+                <div class="formacoes__container-cursos">
+                    <div class="formacoes__container-cursos-logo">
+                        <img src="assets/senai-logo-1 1.svg" width="250px" alt="">
+                    </div>
+                    <div class="formacoes__container-cursos-descricao">
+                        <div class="tooltip">
+                          <a href="#">Senai<img src="assets/Vector.svg" alt=""></a>
+                          <span class="tooltiptext">Clique para saber mais</span>
+                        </div>
+                      </div>
+                      <p>Aprendizagem Industrial de Assistente Administrativo | Ago 2022 - Jul 2023</p>
+            </div>
+        </section>
+
+        <section id="tecnologias">
+            <h1>Tecnologias</h1>
+            <hr>
+            <p class="tecnologias__paragrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, iusto asperiores. Error qui vel alias pariatur facilis. Ex fugit magni dolore repellat numquam aliquam ipsum suscipit blanditiis ab, doloremque minima.</p>
+            <div class="tecnologias__container">
+                <img class="tecnologias__container img" src="assets/image 1.svg" alt="">
+                <img class="tecnologias__container img" src="assets/image 2.svg" alt="">
+                <img class="tecnologias__container img" src="assets/image 3.svg" alt="">
+                <img class="tecnologias__container img" src="assets/image 4.svg" alt="">
+                <img class="tecnologias__container img" src="assets/image 5.svg" alt="">
+                <img class="tecnologias__container img" src="assets/image 6.svg" alt="">
+                <img class="tecnologias__container img" src="assets/js 1.svg" alt="">
+                <img class="tecnologias__container img" src="assets/html-5 1.svg" alt="">
+                <img class="tecnologias__container img" src="assets/css-3 1.svg" alt="">
+            </div>
+        </section>
+
+        <section id="curriculo">
+            <h1>Currículo</h1>
+            <hr>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit excepturi necessitatibus libero, repudiandae molestiae nesciunt atque sint quas nisi consectetur reprehenderit, error est id et esse officia cum placeat quidem?</p>
+                <a class="curriculo__bnt" href="downloads\curriculo-portifólio.pdf">
+                    <img src="assets/download 1.svg" alt="download">
+                </a>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Maiara | 2024</p>
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        slidesPerView: 2,
+        direction: 'horizontal',
+        loop: true,
+
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                navigation: false, // Desativa setas de navegação
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                }
+            },
+            480: {
+                slidesPerView: 2,
+                navigation: false, // Desativa setas de navegação
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                }
+            },
+            768: {
+                slidesPerView: 4,
+                navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            }
+        }
+    });
+</script>
+
+
+
+
+    <!-- Scripts para Tippy.js -->
+  <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+  <script src="https://unpkg.com/tippy.js@6.3.2/dist/tippy-bundle.umd.js"></script>
+
+  <!-- Inicialize Tippy.js -->
+  <script>
+    tippy('[data-tippy]', {
+      placement: 'top' // Posição do tooltip (topo)
+    });
+  </script>
+
+
+</html>

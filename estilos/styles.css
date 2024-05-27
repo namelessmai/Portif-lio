@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Mogra&display=swap');
+
+:root {
+    --cor-letras: #465461;
+    --cor-botao: #5DB3FE;
+    --fonte-letra: "Londrina Solid";
+}
+
+body {
+    font-size: 1rem;
+    color: var(--cor-letras);
+    font-family: var(--fonte-letra);
+    font-weight: 300;
+}
+
+a{
+    text-decoration: none;
+    font-family: var(--fonte-letra);
+    color: var(--cor-letras);
+}
+
+.cabecalho {
+    background-image: url('../assets/banner.svg');
+    background-size: cover;
+    height: 85vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.cabecalho___titulo {
+    text-align: center;
+    grid-column: 1 / span 2;
+    font-size: 3em;
+    font-weight: 300;
+    padding: 7%;
+}
+
+.cabecalho__navegacao{
+    grid-area: 1 / 5 / 1 / -1;
+}
+
+.cabecalho__categorias{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2em;
+    padding: 5%;
+}
+
+
+.cabecalho__container {
+    grid-row: 2; 
+    grid-column: 6/ span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+    text-align: center;
+    text-transform: lowercase;
+    margin-bottom: 25%;
+
+}
+
+.cabecalho__container__titulo{
+    padding: 0;
+    font-size: 4em;
+    font-weight: 300;
+    text-transform: uppercase;
+    
+}
+
+.cabecalho__container__redes{
+    display: flex;
+    gap: 20px;
+}
+
+.cabecalho__container__btn{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 15%;
+    font-size: 1.5em;
+    font-family: 'Mogra';
+    color: white;
+    background: var(--cor-botao);
+    padding: 3% 10%;
+    border-radius: 32px;
+    text-transform: uppercase;
+}
+
+#projetos {
+    padding: 5% 2%;
+}
+
+#formacoes {
+    text-align: center;
+    padding: 2% 5%;
+    word-wrap: break-word;
+}
+
+#formacoes h1{
+    font-size: 2em;
+}
+
+#formacoes hr{
+    width: 50vw;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.formacoes__paragrafo{
+    padding: 0% 30% 0%;
+}
+
+.formacoes__container{
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 0%;
+    flex-wrap: wrap;
+}
+
+.formacoes__container-cursos{
+    display: flex;
+    width: 20vw;
+    gap: 1%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formacoes__container-cursos-logo{
+    display: flex;
+    justify-content: center;
+    width: 20vw;
+    height: 20vw;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0px 6px 8px 1px rgba(0, 0, 0, 0.1);
+}
+
+.formacoes__container-cursos-logo img{
+    display: block;
+    width: 20vw;
+    height: auto;
+}
+
+.formacoes__container-cursos-descricao{
+    display: flex;
+    flex-direction: column;
+}
+
+.formacoes__container-cursos h2{
+    display: flex;
+    gap: 10px;
+    font-size: 2em;
+    margin: 5%;
+}
+
+.tooltip {
+    display: flex;
+    justify-content: center;
+    width: 20vw;
+    position: relative;
+    
+}
+
+.tooltip a{
+    display: flex;
+    gap: 10px;
+    font-size: 32px; 
+    font-weight: 400;
+    margin: 5%;
+
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: var(--cor-letras);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 70%;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%; /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent var(--cor-letras) transparent transparent;
+}
+
+#tecnologias{
+    padding: 0% 5%;
+    padding-top: 2%;
+    text-align: center;
+}
+
+#tecnologias h1{
+    font-size: 2em;
+}
+
+#tecnologias hr{
+    width: 50vw;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.tecnologias__paragrafo{
+    padding: 0% 30% 0%;
+}
+
+.tecnologias__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5% 20%;
+}
+
+.tecnologias__container img{
+    padding: 4%;
+}
+
+#curriculo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0% 5%;
+    padding-top: 2%;
+    text-align: center;
+}
+
+#curriculo h1{
+    font-size: 4em;
+    font-weight: 300;
+}
+
+#curriculo p {
+    padding: 0% 30% 0%;
+}
+
+#curriculo hr{
+    width: 30vw;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.curriculo__bnt{
+    display: flex;
+    justify-content: center;
+    width: 2vw;
+    margin: 2% 0% 8%;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 16px;
+    box-shadow: inset 0 -4px 4px rgba(0, 0, 0, 0.5);
+    padding: 1% 1%;
+}
+
+.curriculo__bnt img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rodape{
+    text-align: center;
+    padding: 2%;
+    background: #F9DAC8;
+    font-size:1.5em;
+    box-shadow: 0px 4px 13px 7px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 768px){
+
+    body{
+        background: linear-gradient(to bottom, #FFFFFF, #F9B5A8, #BC938B);
+    }
+
+    .cabecalho{
+        background-image: none;
+        display: flex;
+        justify-content: center;
+        padding-top: 15%;
+        height: 50vh;
+
+    }
+    .cabecalho___titulo{
+        display: none;
+    }
+    .cabecalho__categorias{
+        display: none;
+    }
+    .cabecalho__container{
+        grid-column: 3 / span 4;
+        margin-bottom: 0;
+        width: 60vw;
+        gap: 10%;
+    }
+    .cabecalho__container__paragrafo{
+        padding-bottom: 0%;
+    }
+    .cabecalho__container__btn{
+        display: none;
+    }
+    #projetos{
+        padding: 10% 0%;
+    }
+    .formacoes__paragrafo,
+    .tecnologias__paragrafo,
+    #curriculo p{
+        padding: 0% 5%;
+    }
+    #formacoes hr,
+    #tecnologias hr,
+    #curriculo hr {
+        width: 80vw;
+    }
+    .formacoes__container{
+        flex-direction: column;
+        align-items: center;
+        padding: 10% 0%;
+    }
+    .formacoes__container-cursos{
+        width: 45vw;
+        margin: 20px;
+    }
+    .formacoes__container-cursos h2{
+        margin: 8%;
+    }
+
+    .formacoes__container-cursos-logo{
+        width: 40vw;
+        height: 40vw;
+
+    }
+    .formacoes__container-cursos-logo img{
+        width: 30vw;
+    }
+
+    .tooltip a{
+        margin: 15%;
+    }
+    .tecnologias__container {
+        padding: 10% 0%;
+    }
+    .curriculo__bnt{
+        width: 5%;
+        border-radius: 10px;
+    }
+    .rodape{
+        display: none;
+    }
+}
+
+/* Dispositivos móveis (modo retrato) */
+@media only screen and (max-width: 480px){
+    
+    .cabecalho{
+        padding: 15%;
+    }
+
+    .cabecalho__container{
+        height: 20vh;
+    }
+    .cabecalho__container__paragrafo{
+        height: auto;
+        display: block;
+    }
+
+}
+  
