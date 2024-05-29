@@ -30,25 +30,29 @@ a{
     grid-template-columns: repeat(8, 1fr);
 }
 
-.cabecalho___titulo {
-    text-align: center;
-    grid-column: 1 / span 2;
-    font-size: 3em;
-    font-weight: 300;
-    padding: 7%;
+.cabecalho__menu {
+    grid-area: 1 / 1 / 1 / -1;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    gap: 2%;
 }
 
-.cabecalho__navegacao{
-    grid-area: 1 / 5 / 1 / -1;
+.cabecalho___titulo{
+    width: 20vw;
+    font-size: 3em;
+    font-weight: 300;
 }
 
 .cabecalho__categorias{
+    width: 60vw;
     display: flex;
-    justify-content: space-between;
+    gap: 5%;
     font-size: 2em;
-    padding: 5%;
+    justify-content: flex-end;
+    margin: 1%;
+    flex-wrap: wrap;
 }
-
 
 .cabecalho__container {
     grid-row: 2; 
@@ -59,8 +63,6 @@ a{
     gap: 5%;
     text-align: center;
     text-transform: lowercase;
-    margin-bottom: 25%;
-
 }
 
 .cabecalho__container__titulo{
@@ -176,18 +178,21 @@ a{
   
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 120px;
+    width: 5vw;
+    max-width: 200px;
     background-color: var(--cor-letras);
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 5px 0;
+    padding: 5px 10px;
     
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
-    top: 10px;
-    left: 70%;
+    top: 2%; /* Position below the button */
+    left: 82%;
+    transform: translateX(-50%);
+    margin-top: 10px;
 }
   
 .tooltip:hover .tooltiptext {
@@ -356,9 +361,11 @@ a{
     .tooltip a{
         margin: 15%;
     }
-    .tecnologias__container {
-        padding: 10% 0%;
+
+    .tooltip .tooltiptext {
+        display: none;
     }
+
     .curriculo__bnt{
         width: 5%;
         border-radius: 10px;
@@ -372,7 +379,7 @@ a{
 @media only screen and (max-width: 480px){
     
     .cabecalho{
-        padding: 15%;
+        padding: 5%;
     }
 
     .cabecalho__container{
@@ -382,6 +389,5 @@ a{
         height: auto;
         display: block;
     }
-
 }
   

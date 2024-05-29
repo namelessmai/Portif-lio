@@ -13,14 +13,16 @@
 </head>
 <body>
     <header class="cabecalho">
-        <h1 class="cabecalho___titulo">Horplami</h1> 
-        <div class="cabecalho__navegacao">  
+        <div class="cabecalho__menu">
+            <h1 class="cabecalho___titulo">Horplami</h1> 
+        <div>  
             <nav class="cabecalho__categorias">
                 <a href="#projetos">Projetos</a>
                 <a href="#formacoes">Formações</a>
                 <a href="#tecnologias">Tecnologias</a>
                 <a href="#curriculo">Currículo</a>
             </nav>
+        </div>
         </div>
         
         <div class="cabecalho__container">
@@ -161,32 +163,22 @@
 <script>
     const swiper = new Swiper('.swiper', {
         slidesPerView: 2,
+        navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
         direction: 'horizontal',
         loop: true,
 
         breakpoints: {
             0: {
                 slidesPerView: 1,
-                navigation: false, // Desativa setas de navegação
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                }
             },
             480: {
-                slidesPerView: 2,
-                navigation: false, // Desativa setas de navegação
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                }
+                slidesPerView: 2,               
             },
             768: {
-                slidesPerView: 4,
-                navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
+                slidesPerView: 4,              
             }
         }
     });
